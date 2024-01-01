@@ -1,0 +1,194 @@
+*{
+    font-family: "poppins", sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+.header{
+    position:relative;
+    background:white;
+
+}
+.header-box {
+   width: 100%;/* Set the width to 100% to cover the entire navigation bar */
+   position: absolute;
+   left: 0;
+}
+.yellow{
+    background: yellow; /* Set the background color to yellow */
+    height: 70px; /* Set the desired height of the yellow box */
+    top: 0; /* Position it at the top of the header */
+}
+.green{
+    background: green;
+    height: 20px; /* Adjust the height as needed */
+    top: 70px; /* Set the top position to be below the yellow box */
+}
+.lightgreen{
+    background: rgb(119, 255, 85);
+    top:90px;
+    height:50px;
+}
+.lightgreen-text{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: black; /* Adjust text color as needed */
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    left: 10px;
+    position: absolute;
+    top: 50; /* Adjust this value to vertically center the logo */
+    transform: translateY(-55%);
+}
+.logo-container {
+    position: relative;
+}
+.nav-links{
+    padding: 28px 0; /*Right= Height, Left= Width*/
+    
+}
+
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-links li a{
+    text-decoration:none;
+    color: black;
+    padding: 5px 0;
+    position:relative;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+ .nav-links li a::after{
+    content:'';
+    background: #ff3d00;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+ }
+ .nav-links li a:hover::after{
+    width: 100%;
+ }
+.container{ /*Adjust Background and allign info to center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:25px;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #2ecc71 40%, #27ae60 60.1%);
+  }
+  .container form{ /*Create white box behind info*/
+    padding:20px;
+    width:700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  }
+  .container form .row{ /*Create gap and Proceed button upto the right*/ 
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+  } 
+  .container form .row .col{ /*Button go more to the right*/
+    flex:1 1 250px;
+  }
+  .container form .row .col .title{/*Adjust tittle*/
+    font-size: 20px;
+    color:#333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  .container form .row .col .inputBox{/*White Bg go  a bit taller*/
+    margin:15px 0;
+  }
+  .container form .row .col .inputBox span{/*Input go to below*/
+    margin-bottom: 10px;
+    display: block;
+  }
+  .container form .row .col .inputBox input{/*Input has box border*/
+    width: 100%;
+    border:1px solid #ccc;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+  }
+  .container form .submit-button{/*The button go to the bottom and adjust color*/
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: #27ae60;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  .container form .submit-button:hover{
+    background:#2ecc71;
+  }
+  footer{
+    background-color:#111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 20px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color:#111;
+    opacity: 0.9;
+}
+
+/*Hover Effect on SM Icons */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color:white;
+    transition: 0.5s;
+}
+
+/*Copyright Section */
+.footerBottom{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color:white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
+}
